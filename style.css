@@ -1,0 +1,496 @@
+*{
+    font-family:monospace;
+    font-size: larger;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/textura_madera.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+
+body{
+    background-color: #110700;
+}
+
+img{
+    width: 85%;
+    border-radius: 35px;
+    text-align: center;
+    
+}
+
+li{
+    color: white;
+    font-size:3vh;
+}
+
+h1{
+    color: white;
+    font-size:5vh;
+}
+
+h3{
+    color: white;
+    font-size:3.5vh;
+    text-align: center;
+}
+
+h4{
+    color: white;
+    font-size:4vh;
+}
+
+p{
+    
+    color: white;
+    font-size:2.8vh;
+    
+}
+
+header{
+    text-align: center;
+    border: 0.5vh solid #c2c2c2;
+    border-radius: 10vh;
+    margin-bottom: 4vh;
+    padding: 1vh 1vh;
+}
+
+.opciones{
+    display: inline-block;
+    border: 0.5vh solid #c2c2c2;
+    border-radius: 8vh;
+    margin: 2vh;
+    width: 40vh;
+    
+}
+
+.descripcion{
+    width: 80%;
+    border-radius: 55px;
+    padding: 1%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2%;
+
+}
+
+.contenedor_opciones{
+    text-align: center;
+}
+
+
+button{
+    border: 2px solid #c2c2c2;
+    margin: 5%;
+    background-color:#6d0808 ;
+    padding: 3vh 4vh;
+    color: white;
+    border-radius: 4vh;
+    width: auto;
+    font-size: 4vh;
+}
+
+button:hover{
+    background-color: #9b1717;
+}
+
+.final{
+    width: 75%;
+    height: 1000px ;
+}
+
+.final img{
+    width: 750px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* Asegúrate de que el contenedor se ajuste al tamaño de las imágenes */
+    width: 200%; /* Ajusta según el tamaño deseado */
+    max-width: 100%;
+}
+
+img.image{
+    width: 35vh;
+    height: 35vh;
+}
+
+image,
+.hover-image {
+    display: block;
+    width: 30vh;
+    object-fit: cover;
+    transition: opacity 0.5s;
+    margin-left: 5vh;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    margin-left: 2.5vh;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+
+}
+
+.descripciones_pj{
+    font-size: 2.3vh;
+    margin: 3%;
+    margin-left: 14%;
+    text-align: left;
+}
+
+#toggle-audio{
+    margin: 2.5vh;
+    width: 25vh;
+    height: 2%;
+    font-size: 3vh;
+    border-radius: 4vh;
+    border: none;
+}
+
+.img_historia{
+    max-height: 80%;
+    min-height: 1;
+}
+
+.cuarto_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho disponible */
+}
+
+#cuarto_1 {
+    max-width: 100%; /* Asegúrate de que la imagen no desborde el contenedor */
+    width: 70%;
+    border: 2px solid rgb(184, 182, 182);
+}
+
+.console {
+    display: block;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    width: 68%; /* Ocupa todo el ancho disponible del contenedor */
+    margin-top: 2%; /* Espacio arriba de la consola */
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+    height: 200px; /* Ajusta la altura según sea necesario */
+    justify-content: center;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#console-output {
+    white-space: pre-wrap; /* Mantiene el formato del texto */
+}
+
+.item {
+    position: absolute; /* Posiciona los items de forma absoluta */
+    width: 4%; /* Tamaño de los items */
+    z-index: 10; /* Asegura que los items estén encima de la imagen */
+
+}
+
+.i1{
+    left: 47%;
+    width: 4%;
+    top: 46%;
+}
+
+.i2 {
+    width: 3%; /* Tamaño de los items */
+    transform: scale(0.8) rotate(42deg) skew(-30deg, -20deg);
+    border-radius: 0;
+    top: 5%;
+    left: 57%;
+}
+
+.i3{
+    left: 36%;
+    top: 24%;
+}
+
+.i4{
+    left: 36%;
+    top: 38%;
+    height: 18%;
+    width: 5%;
+}
+
+.i5{
+    left: 39%;
+    top: 86%;
+    transform: rotate(60deg) ;
+}
+
+.siguiente_btn{
+    display: block;            /* Asegúrate de que el contenedor sea un bloque */
+    text-align: center;
+    font-size: 4vh;
+}
+
+#pasillo_pelea{
+    max-width: 100%; /* Asegúrate de que la imagen no desborde el contenedor */
+    width: 70%;
+    border: 2px solid rgb(184, 182, 182);
+}
+
+#pasillo_pelea {
+    width: 65%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5vh;
+    padding: 20px;
+    pointer-events: none; /* This will make the overlay not intercept mouse events */
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+    padding: 3vh;
+    border-radius: 2vh;
+    pointer-events: all; /* This will allow interaction with the buttons */
+    height: 27.5vh; /* Ajusta el tamaño de acuerdo al contenido */
+    width: 30vh; /* Ajusta el tamaño de acuerdo al contenido */
+    border: 0.4vh solid rgb(184, 182, 182);
+    margin-top: 150%; /* Ajusta el contenedor hacia abajo según sea necesario */
+    margin-left: 51%; /* Ajusta el contenedor hacia la izquierda según sea necesario */
+}
+
+.actions button {
+    padding: 1vh;
+    margin: 1vh;
+    font-size: 2.5vh;
+    cursor: pointer;
+
+}
+
+.accion_btn{
+    border-radius: 1vh;
+}
+
+.console_pelea {
+    padding: 10px;
+    border-radius: 2vh;
+    overflow-y: auto;
+    pointer-events: all; /* Esto permitirá la interacción con la consola */
+    border: 0.4vh solid #ccc;
+    background-color: #000;
+    color: #fff;
+    width: 69vh; /* Ajusta el tamaño de acuerdo al contenido */
+    height: 13vh; /* Ajusta el tamaño de acuerdo al contenido */
+    margin: 2% auto; /* Centra el contenedor verticalmente y ajusta el espacio superior */
+    margin-right: 18%; /* Ajusta el contenedor hacia la derecha según sea necesario */
+    margin-left: 8%; /* Ajusta el contenedor hacia la izquierda según sea necesario */
+    margin-top: 75%;
+    margin-bottom: 26%;
+}
+
+.inventario {
+    padding: 10px;
+    border-radius: 2vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    border: 0.4vh solid rgb(184, 182, 182);
+    width: 69vh; /* Ajusta el tamaño según sea necesario */
+    height: 13vh; /* Ajusta el tamaño según sea necesario */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    overflow-y: auto; /* Permite el desplazamiento si hay muchos ítems */
+    margin: 2% auto; /* Centra el contenedor verticalmente y ajusta el espacio superior */
+    margin-right: 18%; /* Ajusta el contenedor hacia la derecha según sea necesario */
+    margin-left: 8%; /* Ajusta el contenedor hacia la izquierda según sea necesario */
+    margin-top: -25.2%;
+
+    /* Flexbox ajustado para la visualización de ítems */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los ítems se ajusten si no caben en una sola línea */
+    align-items: center; /* Alinea los ítems verticalmente en el centro */
+    justify-content: flex-start; /* Alinea los ítems al principio del contenedor */
+}
+
+.inventario h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.inventario ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    display: flex; /* Muestra los ítems en una fila */
+    flex-wrap: wrap; /* Permite que los ítems se ajusten si hay muchos */
+    gap: 10px; /* Espacio entre los ítems */
+}
+
+.inventario li {
+    padding: 5px 10px;
+    background-color: #0f356e; /* Color de fondo para los ítems */
+    border-radius: 5px; /* Bordes redondeados para los ítems */
+    color: #fff;
+    margin: 2px; /* Espacio entre los ítems */
+    display: inline-block; /* Permite que los ítems se muestren en línea */
+    pointer-events: none; /* Desactiva la interacción inicialmente */
+    opacity: 0.5; /* Hace que los ítems se vean desactivados */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no se puede interactuar */
+}
+
+.inventario li.activable {
+    pointer-events: auto; /* Habilita la interacción */
+    opacity: 1; /* Vuelve a la opacidad normal */
+    cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic */
+}
+
+.inventario li.apagado {
+    background-color: #1a2a57; /* Color de fondo más oscuro para ítems apagados */
+    opacity: 0.5; /* Tonalidad más clara para ítems apagados */
+}
+
+
+
+
+.battle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#jose{
+    position: absolute;
+    z-index: 3;
+    transform: scale(0.25);
+    top: -14vh;
+    left: 15vh;
+}
+
+
+.console_pelea{
+    font-size: 2vh;
+}
+
+
+/* Contenedor de la barra de vida */
+.health-bar-container {
+    position: absolute;
+    bottom: 69vh; /* Ajusta según sea necesario */
+    right: 47vh;  /* Ajusta según sea necesario */
+    width: 50vh; /* Ancho total del contenedor */
+    height: 4vh; /* Altura total del contenedor */
+    padding: 10px; /* Espacio alrededor de la barra de vida */
+    background-color: black; /* Color del fondo del contenedor */
+    border-radius: 7px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir el padding dentro del tamaño total */
+    z-index: 5;
+    
+}
+
+/* Fondo de la barra de vida */
+.health-bar-background {
+    background-color: black; /* Color del fondo */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar el contenido que sobresale */
+    position: relative;
+    padding: 2px; /* Espacio interior alrededor del indicador de vida */
+}
+
+/* Indicador de vida (rojo) */
+.health-bar-foreground {
+    background-color: red; /* Color de la vida */
+    width: 100%; /* Ancho inicial al 100%, se puede ajustar con JS */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease; /* Animación para el cambio de tamaño */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+#foto_jugador{
+    position: absolute;
+    width: 13vh;
+    border-radius: 1vh;
+    border: 0.5vh solid black;
+    z-index: 5;
+    top: 141vh;
+    left: 128vh;
+}
+
+
+.enemy-health-bar-container {
+    position: absolute;
+    bottom: 149vh; /* Ajusta según sea necesario */
+    right: 53vh;  /* Ajusta según sea necesario */
+    width: 70vh; /* Ancho total del contenedor */
+    height: 5vh; /* Altura total del contenedor */
+    padding: 10px; /* Espacio alrededor de la barra de vida */
+    background-color: black; /* Color del fondo del contenedor */
+    border-radius: 7px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir el padding dentro del tamaño total */
+    z-index: 5;
+}
+
+/* Fondo de la barra de vida del enemigo */
+.enemy-health-bar-background {
+    background-color: black; /* Color del fondo */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar el contenido que sobresale */
+    position: relative;
+    padding: 2px; /* Espacio interior alrededor del indicador de vida */
+}
+
+/* Indicador de vida del enemigo (rojo) */
+.enemy-health-bar-foreground {
+    background-color: red; /* Color de la vida */
+    width: 100%; /* Ancho inicial al 100%, se puede ajustar con JS */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease; /* Animación para el cambio de tamaño */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+.deshabilitado {
+    opacity: 0.5; /* Hacer que los botones se vean deshabilitados */
+    cursor: not-allowed; /* Cambiar el cursor cuando pasa sobre el botón */
+}
